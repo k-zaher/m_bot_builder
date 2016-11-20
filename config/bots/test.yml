@@ -1,0 +1,94 @@
+onboarding:
+  welcome:
+    message: 
+      attachment:
+        type: template
+        payload:
+          template_type: button
+          text: Alright let's get started. RiseUp wants to know a little bit about you to create a customized experience for you. We want to understand why you want to come to the summit to recommend all the relevant activities  for your interests. Are you ready?
+          buttons:
+            - title: Let's do this!
+              payload: Riseup::Onboarding::Motivation::Initial
+              type: postback
+              data:
+                user_message: Let's do this!
+            - title: Start Chatting
+              payload: Riseup::Onboarding::Motivation::Initial
+              type: postback
+              data:
+                user_message: Let's do this!
+  motivation:
+    initial:
+      message: 
+        attachment:
+          type: template
+          payload:
+            template_type: generic
+            elements:
+              - title: Welcome to Peter
+                item_url: https://petersfancybrownhats.com
+                image_url: https://petersfancybrownhats.com/company_image.png
+                subtitle: We\'ve got the right hat for everyone.
+                buttons:
+                  - title: Let's do this!
+                    payload: Onboarding::Motivation::Initial
+                    type: postback
+                    data:
+                      user_message: Let's do this!
+                  - title: Start Chatting
+                    payload: Onboarding::Motivation::Initial
+                    type: postback
+                    data:
+                      user_message: Let's do this!
+              - title: Welcome to Peter
+                item_url: https://petersfancybrownhats.com
+                image_url: https://petersfancybrownhats.com/company_image.png
+                subtitle: We\'ve got the right hat for everyone.
+                buttons:
+                  - title: Let's do this!
+                    payload: Onboarding::Motivation::Initial
+                    type: postback
+                    data:
+                      user_message: Let's do this!
+                  - title: Start Chatting
+                    payload: Onboarding::Motivation::Initial
+                    type: postback
+                    data:
+                      user_message: Let's do this!
+    more:
+      message: 
+        attachment:
+          type: template
+          payload:
+            template_type: generic
+            elements:
+              - title: Welcome to Peter
+                item_url: https://petersfancybrownhats.com
+                image_url: https://petersfancybrownhats.com/company_image.png
+                subtitle: We\'ve got the right hat for everyone.
+                buttons:
+                  - title: Let's do this!
+                    payload: Onboarding::Motivation::Initial
+                    type: postback
+                    data:
+                      user_message: Let's do this!
+                  - title: Start Chatting
+                    payload: Onboarding::Motivation::Initial
+                    type: postback
+                    data:
+                      user_message: Let's do this!
+              - title: Welcome to Peter
+                item_url: https://petersfancybrownhats.com
+                image_url: https://petersfancybrownhats.com/company_image.png
+                subtitle: We\'ve got the right hat for everyone.
+                buttons:
+                  - title: Let's do this!
+                    payload: Onboarding::Motivation::Initial
+                    type: postback
+                    data:
+                      user_message: Let's do this!
+                  - title: Start Chatting
+                    payload: Onboarding::Motivation::Initial
+                    type: postback
+                    data:
+                      user_message: Let's do this!

@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "m_bot_builder"
+
+MBotBuilder.init
+
+MBotBuilder::Test.start!
+MBotBuilder::Test.reply!("Test::Onboarding::Motivation::Initial")
